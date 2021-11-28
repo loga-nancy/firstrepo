@@ -10,7 +10,7 @@ This means that in the Gregorian calendar, the years 2000 and 2400 are leap year
 
 
 def is_leap(year):
-    if year%4==0 and year%400:
+    if year%4==0 and (year%400 or year%100 != 0):
         return True
     else:
         return False
